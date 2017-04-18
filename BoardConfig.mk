@@ -223,4 +223,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/land/BoardConfigVendor.mk
+include vendor/xiaomi/land/BoardConfigVendor.mk
