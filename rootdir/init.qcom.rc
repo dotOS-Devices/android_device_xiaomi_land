@@ -672,6 +672,10 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     group camera system inet input graphics
     setenv LD_PRELOAD "libshim_c.so"
 
+# Start camera provider later for encrypted devices
+on property:vold.decrypt=trigger_restart_framework
+    restart camera-provider-2-4
+
 # Allow usb charging to be disabled peristently
 on property:persist.usb.chgdisabled=1
     write /sys/class/power_supply/battery/charging_enabled 0
