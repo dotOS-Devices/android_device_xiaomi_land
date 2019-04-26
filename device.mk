@@ -478,3 +478,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Fix Camera
+PRODUCTS_PACKAGES += \ 
+    $(LOCAL_PATH)/libshim/lib/libshim_cameraservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_cameraservice.so \
+    $(LOCAL_PATH)/libshim/lib/libshim_mutexdestroy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_mutexdestroy.so \
+    $(LOCAL_PATH)/libshim/lib/libshim_pthreadts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_pthreadts.so 
