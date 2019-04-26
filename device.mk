@@ -312,7 +312,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(DEVICE_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
-
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
@@ -480,7 +479,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Fix Camera
-PRODUCTS_PACKAGES += \ 
-    $(LOCAL_PATH)/libshim/lib/libshim_cameraservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_cameraservice.so \
-    $(LOCAL_PATH)/libshim/lib/libshim_mutexdestroy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_mutexdestroy.so \
-    $(LOCAL_PATH)/libshim/lib/libshim_pthreadts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_pthreadts.so 
+PRODUCTS_PACKAGES += \
+$(LOCAL_PATH)/libshim/lib/libshim_cameraservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_cameraservice.so \
+$(LOCAL_PATH)/libshim/lib/libshim_mutexdestroy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_mutexdestroy.so \
+$(LOCAL_PATH)/libshim/lib/libshim_pthreadts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_pthreadts.so 
