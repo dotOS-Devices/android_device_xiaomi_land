@@ -223,6 +223,7 @@ VENDOR_SECURITY_PATCH := 2019-01-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
